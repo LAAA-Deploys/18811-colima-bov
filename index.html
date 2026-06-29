@@ -137,6 +137,22 @@
   .costar-badge .t{font-weight:800;font-size:15px}
   .costar-badge .s{font-size:12px;color:var(--gold);margin-top:3px}
 
+  /* Inventory / listings */
+  .inv-intro{font-size:14px;color:#333;margin-bottom:4px}
+  .inv-intro strong{color:var(--navy)}
+  .listings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:18px}
+  .listing-card{border:1px solid var(--line);text-decoration:none;color:inherit;display:flex;flex-direction:column;background:#fff;border-radius:8px;overflow:hidden;transition:box-shadow .2s,border-color .2s,transform .2s}
+  .listing-card:hover{box-shadow:0 6px 20px rgba(10,37,64,0.14);border-color:var(--gold);transform:translateY(-2px)}
+  .listing-img{width:100%;height:150px;object-fit:cover;display:block;background:#dde3ec}
+  .listing-body{padding:13px 15px;flex:1}
+  .listing-price{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-0.3px}
+  .listing-address{font-size:13.5px;font-weight:700;color:var(--ink);margin-top:2px}
+  .listing-city{font-size:12px;color:var(--sub)}
+  .listing-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+  .listing-tag{font-size:10px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;padding:3px 8px;border:1px solid var(--line);color:var(--sub);border-radius:3px}
+  .listing-tag.land{border-color:var(--gold);color:#8a6f2a;background:#fbf7ee}
+  .listing-tag.escrow{border-color:var(--navy);color:#fff;background:var(--navy)}
+
   /* Footer */
   footer{background:var(--navy);color:#fff;border-top:4px solid var(--gold);margin-top:14px}
   footer .wrap{padding:32px 24px 26px}
@@ -160,8 +176,7 @@
     <h1>18811 Colima Road</h1>
     <div class="sub">&ldquo;Colima Apartments&rdquo; &mdash; 105-Unit Approved Multifamily Development &middot; Rowland Heights, CA 91748</div>
     <div class="metarow">
-      <div class="m"><div class="l">Prepared For</div><div class="v">CH Heights, LLC &middot; Sunny Construction &amp; Development</div></div>
-      <div class="m"><div class="l">Attention</div><div class="v">Janet Chan</div></div>
+      <div class="m"><div class="l">Prepared For</div><div class="v">Janet Chan</div></div>
       <div class="m"><div class="l">Prepared By</div><div class="v">The LAAA Team &middot; Marcus &amp; Millichap</div></div>
       <div class="m"><div class="l">Date</div><div class="v">June 2026</div></div>
     </div>
@@ -178,6 +193,7 @@
     <a href="#valuation">Valuation</a>
     <a href="#pricing">Pricing</a>
     <a href="#team">Team</a>
+    <a href="#inventory">Inventory</a>
   </div>
 </nav>
 
@@ -412,6 +428,29 @@
       <div class="team-card"><img class="team-headshot" src="images/Blake_Lewitt.png" alt="Blake Lewitt"><div class="team-card-name">Blake Lewitt</div><div class="team-card-title">Associate Investments</div></div>
       <div class="team-card"><img class="team-headshot" src="images/Mike_Palade.png" alt="Mike Palade"><div class="team-card-name">Mike Palade</div><div class="team-card-title">Agent Assistant</div></div>
       <div class="team-card"><img class="team-headshot" src="images/Tony_Dang.png" alt="Tony H. Dang"><div class="team-card-name">Tony H. Dang</div><div class="team-card-title">Business Operations Manager</div></div>
+    </div>
+  </section>
+
+  <!-- INVENTORY -->
+  <section class="card" id="inventory">
+    <h2>LAAA Team Active Inventory</h2>
+    <p class="inv-intro">The LAAA Team at Marcus &amp; Millichap is one of the most active development land teams in Los Angeles &mdash; <strong>15 development listings, 1,582 buildable units, and $75M+ in volume</strong> currently across greater Los Angeles and Southern California. The full land book is below; click any property for its offering.</p>
+    <div class="listings-grid">
+      <a class="listing-card" href="https://www.laaa.com/om/3219-3249-overland" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/3219-3249-overland/hero-3219-3249-overland-X7FKOgRoteOgYP9HJG65geeA3nsdeG.jpg" alt="3219-3249 Overland Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$11,995,000</div><div class="listing-address">3219-3249 Overland Ave</div><div class="listing-city">Palms / Los Angeles</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">100 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/5511-ethel" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/5511-ethel/hero-5511-ethel-mzO6XBkEbLzfGoLrvP0Fp2eH3FJeQG.jpeg" alt="5511 Ethel Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$9,000,000</div><div class="listing-address">5511 Ethel Ave</div><div class="listing-city">Sherman Oaks</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">199 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/2600-s-robertson" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/2600-s-robertson/hero-hero-rendering.jpg" alt="2600 S Robertson Blvd" loading="lazy" /><div class="listing-body"><div class="listing-price">$7,995,000</div><div class="listing-address">2600 S Robertson Blvd</div><div class="listing-city">Los Angeles</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">149 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/12335-osborne" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/12335-osborne/hero-12335-osborne-0hdfCDe6U0HifCfdKZycNUtQEkVGMm.jpeg" alt="12335 Osborne Pl" loading="lazy" /><div class="listing-body"><div class="listing-price">$4,250,000</div><div class="listing-address">12335 Osborne Pl</div><div class="listing-city">Pacoima</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">293 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/601-pearl" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/601-pearl/hero-hero.jpg" alt="601 Pearl St" loading="lazy" /><div class="listing-body"><div class="listing-price">$3,700,000</div><div class="listing-address">601 Pearl St</div><div class="listing-city">Ojai</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">9 Homes</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/10898-olinda" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/10898-olinda/hero-10898-olinda-TimlpzQtgMmTymfiibUsxy0wFBQAN7.jpeg" alt="10898 Olinda St" loading="lazy" /><div class="listing-body"><div class="listing-price">$2,500,000</div><div class="listing-address">10898 Olinda St</div><div class="listing-city">Sun Valley</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">78 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/5321-riverton" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/5321-riverton/hero-5321-riverton-hero-alt.jpg" alt="5321 Riverton Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$2,000,000</div><div class="listing-address">5321 Riverton Ave</div><div class="listing-city">North Hollywood</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">27 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/6540-shoup" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/6540-shoup/hero-6540%20Shoup%20Development%20-%20OM.jpg" alt="6540 Shoup Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$2,000,000</div><div class="listing-address">6540 Shoup Ave</div><div class="listing-city">West Hills</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">20 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/3837-college" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/3837-college/hero-3837-college-e627a0aa.jpg" alt="3837 College Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$1,800,000</div><div class="listing-address">3837 College Ave</div><div class="listing-city">Culver City</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">21 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/631-637-w-6th" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/631-637-w-6th/hero-hero.jpg" alt="631-637 W 6th St" loading="lazy" /><div class="listing-body"><div class="listing-price">$1,725,000</div><div class="listing-address">631-637 W 6th St</div><div class="listing-city">San Pedro</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">10 Homes</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/6901-woodman" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/6901-woodman/hero-6901-woodman-piHIRW7VlXMTihBp7zDjVJyGhiWqVS.jpeg" alt="6901 Woodman Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$1,550,000</div><div class="listing-address">6901 Woodman Ave</div><div class="listing-city">Van Nuys</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">55 Buildable Units</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/5151-e-arrow" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/5151-e-arrow/hero-5151-e-arrow-pmMJ29dtYMiq6w4yjquhADZHWFp8ER.jpeg" alt="5151 E Arrow Hwy" loading="lazy" /><div class="listing-body"><div class="listing-price">$10,500,000</div><div class="listing-address">5151 E Arrow Hwy</div><div class="listing-city">Montclair</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">300 Buildable Units</span><span class="listing-tag escrow">In Escrow</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/1164-w-sunset" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/1164-w-sunset/hero-1164-w-sunset-NHp2KgQLcghM3SAhG1hK99qUL0ZudM.jpeg" alt="1120-1164 W Sunset Blvd" loading="lazy" /><div class="listing-body"><div class="listing-price">$9,000,000</div><div class="listing-address">1120-1164 W Sunset Blvd</div><div class="listing-city">Los Angeles</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">200 Buildable Units</span><span class="listing-tag escrow">In Escrow</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/4623-4631-beverly" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/4623-4631-beverly/hero-4623-4631-beverly-HsZTOw8o0mVrVcJJGemhhTgoQDUGHm.jpeg" alt="4623-4631 Beverly Blvd" loading="lazy" /><div class="listing-body"><div class="listing-price">$5,250,000</div><div class="listing-address">4623-4631 Beverly Blvd</div><div class="listing-city">Greater Wilshire</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">113 Buildable Units</span><span class="listing-tag escrow">In Escrow</span></div></div></a>
+      <a class="listing-card" href="https://www.laaa.com/om/10425-independence" target="_blank" rel="noopener"><img class="listing-img" src="https://8vshqz8guh7wmcow.public.blob.vercel-storage.com/om/10425-independence/hero-10425-independence-7yOML3IHjyQTy4dlKFj5FJg3QKgwMP.jpeg" alt="10425 Independence Ave" loading="lazy" /><div class="listing-body"><div class="listing-price">$2,500,000</div><div class="listing-address">10425 Independence Ave</div><div class="listing-city">Chatsworth</div><div class="listing-tags"><span class="listing-tag land">Land</span><span class="listing-tag">8 Homes</span><span class="listing-tag escrow">In Escrow</span></div></div></a>
     </div>
   </section>
 
